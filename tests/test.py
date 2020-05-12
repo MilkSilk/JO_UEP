@@ -19,5 +19,7 @@ class TestSum(unittest.TestCase):
         result = sum123(data)
         self.assertEqual(result, 1)
 
-if __name__ == "__main__":
-    unittest.main()
+    def test_bad_type(self):
+        data = "banana"
+        with self.assertRaises(TypeError):
+            result = sum123(data)
