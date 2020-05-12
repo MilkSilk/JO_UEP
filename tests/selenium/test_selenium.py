@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 
 
 class TestSelenium(unittest.TestCase):
-    @unittest.skip("Nie pyknie na serwezre github, bo nie sciagamy sterownika")
+    @unittest.skip("Nie pyknie na serwerze github, bo nie sciagamy sterownika")
     def test_selenium(self):
         driver = webdriver.Chrome(executable_path='/Users/jacja/Downloads/chromedriver')
         driver.get("http://www.python.org")
