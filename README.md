@@ -1,4 +1,4 @@
 # JO_UEP
-Repozytorium na potrzeby przedmiotu JO
+Repozytorium na potrzeby przedmiotu jakość oprogramowania
 
 https://github.com/MilkSilk/JO_UEP.git
