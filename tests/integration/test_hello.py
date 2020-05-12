@@ -3,7 +3,7 @@ import unittest
 from hello import app
 
 
-class TestCase(unittest.TestCase):
+class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
         app.testing = True
@@ -12,4 +12,4 @@ class TestCase(unittest.TestCase):
     def test_hello(self):
         response = self.client.get('/')
         self.assertEqual(200, response.status_code)
-        self.assertEqual("Hello world!", response.data)
+        self.assertEqual(b"Hello world!", response.data)
